@@ -31,17 +31,17 @@
 
 // under this voltage the software will not start 
 // if STOP_LOWBATTERY is defined above
-#define STOP_LOWBATTERY_TRESH 3.3
+#define STOP_LOWBATTERY_TRESH 3.2
 
 // voltage to start warning
 // volts
-#define VBATTLOW 3.5
+#define VBATTLOW 3.3
 
 // compensation for battery voltage vs throttle drop
 // increase if battery low comes on at max throttle
 // decrease if battery low warning goes away at high throttle
 // in volts
-#define VDROP_FACTOR 0.7
+#define VDROP_FACTOR 0.8
 
 #define AUTO_VDROP_FACTOR
 
@@ -115,13 +115,13 @@
 
 #define HEADLESSMODE CH_OFF
 // rates / expert mode
-#define RATES CH_EXPERT
+#define RATES CH_ON
 
-#define LEVELMODE CH_AUX1
+#define LEVELMODE DEVO_CHAN_5
 
-#define STARTFLIP CH_OFF
+#define STARTFLIP DEVO_CHAN_6
 
-#define LEDS_ON CH_ON
+#define LEDS_ON DEVO_CHAN_7
 
 
 
